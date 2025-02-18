@@ -12,7 +12,7 @@ namespace ShopStar.Order.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-39U8THB\\SQLEXPRESS; initial Catalog=ShopStarOrderDb; integrated Security=true;");
+            optionsBuilder.UseSqlServer("Server=localhost,1440; initial Catalog=ShopStarOrderDb; User=sa;Password=123456aA*");
         }
 
         public DbSet<Address> Addresses { get; set; }

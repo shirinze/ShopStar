@@ -9,7 +9,7 @@ namespace ShopStar.Order.Application.Features.Meditor.Results.OrderingResults
 {
     public class GetOrderingQueryResult
     {
-        public int OredringId { get; set; }
+        public int OrderingId { get; set; }
         public string UserId { get; set; }
         public decimal TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }

@@ -10,7 +10,7 @@ namespace ShopStar.Order.Application.Features.Meditor.Commands.OrderingCommands
 {
     public class UpdateOrderingCommand:IRequest
     {
-        public int OredringId { get; set; }
+        public int OrderingId { get; set; }
         public string UserId { get; set; }
         public decimal TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }

@@ -28,7 +28,7 @@ namespace ShopStar.Order.Application.Features.Meditor.Handlers.OrderingHandlers
                 OrderDate = value.OrderDate,
                 TotalPrice = value.TotalPrice,
                 UserId = value.UserId,
-                OredringId=value.OredringId
+                OrderingId=value.OrderingId
             };
         }
     }

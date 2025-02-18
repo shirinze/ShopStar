@@ -21,7 +21,7 @@ namespace ShopStar.Order.Application.Features.Meditor.Handlers.OrderingHandlers
 
         public async Task Handle(UpdateOrderingCommand request, CancellationToken cancellationToken)
         {
-            var value = await _repository.GetByIdAsync(request.OredringId);
+            var value = await _repository.GetByIdAsync(request.OrderingId);
             value.OrderDate = request.OrderDate;
             value.TotalPrice = request.TotalPrice;
             value.UserId = request.UserId;

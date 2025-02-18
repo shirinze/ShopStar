@@ -8,7 +8,7 @@ namespace ShopStar.Order.Domain.Entities
 {
     public class Ordering
     {
-        public int OredringId { get; set; }
+        public int OrderingId { get; set; }
         public string UserId { get; set; }
         public decimal TotalPrice { get; set; }
         public DateTime OrderDate { get; set; }

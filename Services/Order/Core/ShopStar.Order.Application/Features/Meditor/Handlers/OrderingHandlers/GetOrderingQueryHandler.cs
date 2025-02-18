@@ -26,7 +26,7 @@ namespace ShopStar.Order.Application.Features.Meditor.Handlers.OrderingHandlers
             return values.Select(x => new GetOrderingQueryResult
             {
                 OrderDate = x.OrderDate,
-                OredringId = x.OredringId,
+                OrderingId = x.OrderingId,
                 TotalPrice = x.TotalPrice,
                 UserId = x.UserId
             }).ToList();
