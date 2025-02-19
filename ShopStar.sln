@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.Order.Persistence"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.Order.WebApi", "Services\Order\Presentation\ShopStar.Order.WebApi\ShopStar.Order.WebApi.csproj", "{CD3B2581-8D5F-4E3C-A9B4-841FAAD52E25}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{DEDF7298-2762-49E6-84B6-DF9C72BC1C59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.IdentityServer", "IdentityServer\ShopStar.IdentityServer\ShopStar.IdentityServer.csproj", "{216D9D47-EEBB-48C2-8DDF-1FD468B8A229}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,10 @@ Global
 		{CD3B2581-8D5F-4E3C-A9B4-841FAAD52E25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD3B2581-8D5F-4E3C-A9B4-841FAAD52E25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD3B2581-8D5F-4E3C-A9B4-841FAAD52E25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{216D9D47-EEBB-48C2-8DDF-1FD468B8A229}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{216D9D47-EEBB-48C2-8DDF-1FD468B8A229}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{216D9D47-EEBB-48C2-8DDF-1FD468B8A229}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{216D9D47-EEBB-48C2-8DDF-1FD468B8A229}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +84,6 @@ Global
 		{D1FA2ECD-459F-4087-A0EE-D02C3A65979C} = {FE06170C-9A05-47BC-B695-FE16ED7355BB}
 		{A437665C-3DB8-41EB-AC01-92FBCBD7C6DD} = {3A344B09-5213-4827-846D-D3A4F6271001}
 		{CD3B2581-8D5F-4E3C-A9B4-841FAAD52E25} = {CE69B5BD-3CA9-46F3-87D9-FE5F49587C26}
+		{216D9D47-EEBB-48C2-8DDF-1FD468B8A229} = {DEDF7298-2762-49E6-84B6-DF9C72BC1C59}
 	EndGlobalSection
 EndGlobal
