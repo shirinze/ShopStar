@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using IdentityServer4.Hosting.LocalApiAuthentication;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using ShopStar.IdentityServer.Dtos;
 using ShopStar.IdentityServer.Models;
 using System.Threading.Tasks;
+using static IdentityServer4.IdentityServerConstants;
 
 namespace ShopStar.IdentityServer.Controllers
 {
+    [Authorize(LocalApi.PolicyName)]
     [Route("api/[controller]")]
     [ApiController]
     public class RegistersController : ControllerBase

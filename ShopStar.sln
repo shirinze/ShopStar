@@ -34,6 +34,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.IdentityServer", "IdentityServer\ShopStar.IdentityServer\ShopStar.IdentityServer.csproj", "{7B0F1E76-EF05-4301-AEB1-36A81C70D86F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirement", "Requirement", "{6F0A7860-E97C-421C-BF45-D5A8CFDF4F27}"
+	ProjectSection(SolutionItems) = preProject
+		IdentityServerErrorVersionSolution.txt = IdentityServerErrorVersionSolution.txt
+		PortainerCmd.txt = PortainerCmd.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
