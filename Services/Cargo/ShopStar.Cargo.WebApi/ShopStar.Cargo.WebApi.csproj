@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ShopStar.Cargo.BuinessLayer\ShopStar.Cargo.BuinessLayer.csproj" />
     <ProjectReference Include="..\ShopStar.Cargo.DataAccessLayer\ShopStar.Cargo.DataAccessLayer.csproj" />
     <ProjectReference Include="..\ShopStar.Cargo.DtoLayer\ShopStar.Cargo.DtoLayer.csproj" />
