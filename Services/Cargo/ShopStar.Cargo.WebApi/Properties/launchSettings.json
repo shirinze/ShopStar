@@ -4,17 +4,17 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:33308",
-      "sslPort": 44301
+      "applicationUrl": "http://localhost:53807",
+      "sslPort": 44318
     }
   },
   "profiles": {
-    "ShopStar.Catalog": {
+    "ShopStar.Cargo.WebApi": {
       "commandName": "Project",
       "dotnetRunMessages": true,
-      "launchBrowser": false,
+      "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7113",
+      "applicationUrl": "https://localhost:7143;http://localhost:5176",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

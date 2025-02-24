@@ -37,7 +37,20 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirement", "Requirement"
 	ProjectSection(SolutionItems) = preProject
 		IdentityServerErrorVersionSolution.txt = IdentityServerErrorVersionSolution.txt
 		PortainerCmd.txt = PortainerCmd.txt
+		PortNumber.txt = PortNumber.txt
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{C736F7AB-30BE-4F2C-940E-084F6F89A6C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.Cargo.BuinessLayer", "Services\Cargo\ShopStar.Cargo.BuinessLayer\ShopStar.Cargo.BuinessLayer.csproj", "{94C23D0D-AD6B-4989-ABE6-F7188CAF6A91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.Cargo.EntityLayer", "Services\Cargo\ShopStar.Cargo.EntityLayer\ShopStar.Cargo.EntityLayer.csproj", "{7523936C-FE36-4CB5-A98A-4578A2AA7401}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.Cargo.DataAccessLayer", "Services\Cargo\ShopStar.Cargo.DataAccessLayer\ShopStar.Cargo.DataAccessLayer.csproj", "{DEDF043C-BCC8-480D-B38A-AA3427235B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.Cargo.DtoLayer", "Services\Cargo\ShopStar.Cargo.DtoLayer\ShopStar.Cargo.DtoLayer.csproj", "{3CD04715-1AB6-4E17-A78C-BB06BE384D96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.Cargo.WebApi", "Services\Cargo\ShopStar.Cargo.WebApi\ShopStar.Cargo.WebApi.csproj", "{15A64C14-22FB-46EF-A79D-3EC7B8C17F76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -73,6 +86,26 @@ Global
 		{7B0F1E76-EF05-4301-AEB1-36A81C70D86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B0F1E76-EF05-4301-AEB1-36A81C70D86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B0F1E76-EF05-4301-AEB1-36A81C70D86F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94C23D0D-AD6B-4989-ABE6-F7188CAF6A91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94C23D0D-AD6B-4989-ABE6-F7188CAF6A91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94C23D0D-AD6B-4989-ABE6-F7188CAF6A91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94C23D0D-AD6B-4989-ABE6-F7188CAF6A91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7523936C-FE36-4CB5-A98A-4578A2AA7401}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7523936C-FE36-4CB5-A98A-4578A2AA7401}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7523936C-FE36-4CB5-A98A-4578A2AA7401}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7523936C-FE36-4CB5-A98A-4578A2AA7401}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEDF043C-BCC8-480D-B38A-AA3427235B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEDF043C-BCC8-480D-B38A-AA3427235B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEDF043C-BCC8-480D-B38A-AA3427235B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEDF043C-BCC8-480D-B38A-AA3427235B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CD04715-1AB6-4E17-A78C-BB06BE384D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CD04715-1AB6-4E17-A78C-BB06BE384D96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CD04715-1AB6-4E17-A78C-BB06BE384D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CD04715-1AB6-4E17-A78C-BB06BE384D96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15A64C14-22FB-46EF-A79D-3EC7B8C17F76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15A64C14-22FB-46EF-A79D-3EC7B8C17F76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15A64C14-22FB-46EF-A79D-3EC7B8C17F76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15A64C14-22FB-46EF-A79D-3EC7B8C17F76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,5 +124,11 @@ Global
 		{A437665C-3DB8-41EB-AC01-92FBCBD7C6DD} = {3A344B09-5213-4827-846D-D3A4F6271001}
 		{CD3B2581-8D5F-4E3C-A9B4-841FAAD52E25} = {CE69B5BD-3CA9-46F3-87D9-FE5F49587C26}
 		{7B0F1E76-EF05-4301-AEB1-36A81C70D86F} = {BDD4EC7C-256F-48F2-A18C-CC1A80688E81}
+		{C736F7AB-30BE-4F2C-940E-084F6F89A6C8} = {E36334FA-21C6-4246-B255-7D0202FF4B33}
+		{94C23D0D-AD6B-4989-ABE6-F7188CAF6A91} = {C736F7AB-30BE-4F2C-940E-084F6F89A6C8}
+		{7523936C-FE36-4CB5-A98A-4578A2AA7401} = {C736F7AB-30BE-4F2C-940E-084F6F89A6C8}
+		{DEDF043C-BCC8-480D-B38A-AA3427235B69} = {C736F7AB-30BE-4F2C-940E-084F6F89A6C8}
+		{3CD04715-1AB6-4E17-A78C-BB06BE384D96} = {C736F7AB-30BE-4F2C-940E-084F6F89A6C8}
+		{15A64C14-22FB-46EF-A79D-3EC7B8C17F76} = {C736F7AB-30BE-4F2C-940E-084F6F89A6C8}
 	EndGlobalSection
 EndGlobal
