@@ -15,6 +15,8 @@ namespace ShopStar.IdentityServer
             new ApiResource("ResourceCatalog"){Scopes={"CatalogFullPermission","CatalogReadPermission"}},
             new ApiResource("ResourceDiscount"){Scopes={"DiscountFullPermission"}},
             new ApiResource("ResourceOrder"){Scopes={"OrderFullPermission"}},
+            new ApiResource("ResourceCargo"){Scopes={"CargoFullPermission"}},
+            new ApiResource("ResourceBasket"){Scopes={"BasketFullPermission"}},
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -30,6 +32,8 @@ namespace ShopStar.IdentityServer
             new ApiScope("CatalogReadPermission","Reading authority for Catalog operations"),
             new ApiScope("DiscountFullPermission","Full authority for Discount operations"),
             new ApiScope("OrderFullPermission","Full authority for Order operations"),
+            new ApiScope("CargoFullPermission","Full authority for Cargo operations"),
+            new ApiScope("BasketFullPermission","Full authority for Basket operations"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName),
         };
         public static IEnumerable<Client> Clients => new Client[]
@@ -50,7 +54,7 @@ namespace ShopStar.IdentityServer
             {
                 ClientId="ShopStarManagerId",
                 ClientName="Shop Star Manager User",
-                AllowedGrantTypes=GrantTypes.ClientCredentials,
+                AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                 ClientSecrets={new Secret("shopstarsecret".Sha256())},
                 AllowedScopes={ "CatalogReadPermission", "CatalogFullPermission" }
             },
@@ -60,9 +64,9 @@ namespace ShopStar.IdentityServer
             {
                 ClientId="ShopStarAdminId",
                 ClientName="Shop Star Admin User",
-                AllowedGrantTypes=GrantTypes.ClientCredentials,
+                AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                 ClientSecrets={new Secret("shopstarsecret".Sha256())},
-                AllowedScopes={ "CatalogFullPermission", "CatalogReadPermission", "DiscountFullPermission", "OrderFullPermission",
+                AllowedScopes={ "CatalogFullPermission", "CatalogReadPermission", "DiscountFullPermission", "OrderFullPermission","CargoFullPermission","BasketFullPermission",
                 IdentityServerConstants.LocalApi.ScopeName,
                 IdentityServerConstants.StandardScopes.Email,
                 IdentityServerConstants.StandardScopes.OpenId,

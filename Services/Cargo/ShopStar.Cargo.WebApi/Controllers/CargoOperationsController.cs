@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopStar.Cargo.BuinessLayer.Abstract;
 using ShopStar.Cargo.DtoLayer.Dtos.CargoOperationDtos;
@@ -6,6 +7,7 @@ using ShopStar.Cargo.EntityLayer.Concreate;
 
 namespace ShopStar.Cargo.WebApi.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CargoOperationsController : ControllerBase
@@ -40,7 +42,7 @@ namespace ShopStar.Cargo.WebApi.Controllers
         public IActionResult GetCargoOperationById(int id)
         {
             var value = _operationService.TGetById(id);
-            return Ok("GetById Successfull");
+            return Ok(value);
         }
         [HttpDelete]
         public IActionResult DeleteCargoOperation(int id)
@@ -48,7 +50,7 @@ namespace ShopStar.Cargo.WebApi.Controllers
             _operationService.TDelete(id);
             return Ok("Delete Successfull");
         }
-        [HttpPost]
+        [HttpPut]
         public IActionResult UpdateCargoOperation(UpdateCargoOperationDto updateCargoOperationDto)
         {
             CargoOperation cargoOperation = new CargoOperation()
