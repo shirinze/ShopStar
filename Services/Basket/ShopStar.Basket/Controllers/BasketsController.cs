@@ -21,6 +21,7 @@ namespace ShopStar.Basket.Controllers
         [HttpGet]
         public async Task<IActionResult> GetMyBasket()
         {
+            var user = User.Claims;
             var values = await _baskerService.GetBasket(_loginService.GetUserId);
             return Ok(values);
         }
