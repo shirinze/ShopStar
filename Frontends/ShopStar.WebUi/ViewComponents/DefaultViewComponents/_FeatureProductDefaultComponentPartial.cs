@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace ShopStar.WebUi.ViewComponents.UiLayoutViewComponents
+namespace ShopStar.WebUi.ViewComponents.DefaultViewComponents
 {
-    public class _ScriptUiLayoutComponenPartial:ViewComponent
+    public class _FeatureProductDefaultComponentPartial:ViewComponent
     {
         public IViewComponentResult Invoke()
         {
