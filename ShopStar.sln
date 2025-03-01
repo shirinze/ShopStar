@@ -60,6 +60,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontends", "Frontends", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.WebUi", "Frontends\ShopStar.WebUi\ShopStar.WebUi.csproj", "{B116C016-8311-4BA0-B7CD-278E785C34B3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopStar.DtosLayer", "Frontends\ShopStar.DtosLayer\ShopStar.DtosLayer.csproj", "{E5BD7129-6332-4425-A477-ABBABF0FF99E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -122,6 +124,10 @@ Global
 		{B116C016-8311-4BA0-B7CD-278E785C34B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B116C016-8311-4BA0-B7CD-278E785C34B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B116C016-8311-4BA0-B7CD-278E785C34B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5BD7129-6332-4425-A477-ABBABF0FF99E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BD7129-6332-4425-A477-ABBABF0FF99E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BD7129-6332-4425-A477-ABBABF0FF99E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BD7129-6332-4425-A477-ABBABF0FF99E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,5 +155,6 @@ Global
 		{8CFB72AB-B481-4A37-8E25-51F0FDA346D5} = {E36334FA-21C6-4246-B255-7D0202FF4B33}
 		{AA484797-348F-425C-86E7-A679B914B092} = {8CFB72AB-B481-4A37-8E25-51F0FDA346D5}
 		{B116C016-8311-4BA0-B7CD-278E785C34B3} = {BA9445D7-48EE-4556-B4AC-11B2BE0BAD39}
+		{E5BD7129-6332-4425-A477-ABBABF0FF99E} = {BA9445D7-48EE-4556-B4AC-11B2BE0BAD39}
 	EndGlobalSection
 EndGlobal

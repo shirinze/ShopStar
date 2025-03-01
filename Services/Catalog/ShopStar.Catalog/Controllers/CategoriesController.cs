@@ -6,7 +6,7 @@ using ShopStar.Catalog.Services.CategoryServices;
 
 namespace ShopStar.Catalog.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase
