@@ -35,7 +35,7 @@ namespace ShopStar.Catalog.Controllers
             await _categoryService.CreateCategoryAsync(createcategorydto);
             return Ok("Create Success");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(string id)
         {
             await _categoryService.DeleteCategoryAsync(id);

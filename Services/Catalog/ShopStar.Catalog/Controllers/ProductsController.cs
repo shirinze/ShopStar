@@ -7,7 +7,7 @@ using ShopStar.Catalog.Services.ProductServices;
 
 namespace ShopStar.Catalog.Controllers
 {
-    [Authorize]
+    [AllowAnonymous]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
@@ -37,7 +37,7 @@ namespace ShopStar.Catalog.Controllers
             await _productService.CreateProductAsync(createProductdto);
             return Ok("Create Success");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(string id)
         {
             await _productService.DeleteProductAsync(id);
