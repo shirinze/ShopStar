@@ -90,15 +90,15 @@ namespace ShopStar.WebUi.Areas.Admin.Controllers
         [Route("UpdateProduct/{id}")]
         public async Task<IActionResult> UpdateProduct(string id)
         {
-            var client = _httpClientFactory.CreateClient();
+            
 
             ViewBag.v1 = "Home";
             ViewBag.v2 = "Product";
             ViewBag.v3 = "Update";
             ViewBag.v0 = "update Product";
 
-         
-            var responseMessage1 = await client.GetAsync("https://localhost:7113/api/Categories");
+            var client1 = _httpClientFactory.CreateClient();
+            var responseMessage1 = await client1.GetAsync("https://localhost:7113/api/Categories");
             var jsonData1 = await responseMessage1.Content.ReadAsStringAsync();
             var values1 = JsonConvert.DeserializeObject<List<ResultCategoryDto>>(jsonData1);
             List<SelectListItem> categoryValues = (from x in values1
@@ -108,9 +108,9 @@ namespace ShopStar.WebUi.Areas.Admin.Controllers
                                                        Value = x.CategoryID
                                                    }).ToList();
 
-
-            
-            var responseMessage = await client.GetAsync("https://localhost:7113/api/Products/" + id);
+            ViewBag.CategoryValues = categoryValues;
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"https://localhost:7113/api/Products/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -133,6 +133,26 @@ namespace ShopStar.WebUi.Areas.Admin.Controllers
             }
 
             return View();
+        }
+
+        [Route("ProductListWithCategory")]
+        public async Task<IActionResult> ProductListWithCategory()
+        {
+            ViewBag.v1 = "Home";
+            ViewBag.v2 = "Product";
+            ViewBag.v3 = "List";
+            ViewBag.v0 = "Product list";
+
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync("https://localhost:7113/api/Products/ProductListWithCategory");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var values = JsonConvert.DeserializeObject<List<ResultProductWithCategoryDto>>(jsonData);
+                return View(values);
+            }
+            return View();
+           
         }
     }
 }

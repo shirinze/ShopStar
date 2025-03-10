@@ -49,5 +49,11 @@ namespace ShopStar.Catalog.Controllers
             await _productService.UpdateProductAsync(updateProductdto);
             return Ok("Update Success");
         }
+        [HttpGet("ProductListWithCategory")]
+        public async Task<IActionResult> ProductListWithCategory()
+        {
+            var values=await _productService.GetProductWithCategoryAsync();
+            return Ok(values);
+        }
     }
 }

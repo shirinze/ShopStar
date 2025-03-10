@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ShopStar.Catalog.Dtos.CategoryDtos;
+using ShopStar.Catalog.Dtos.FeatureSliderDtos;
 using ShopStar.Catalog.Dtos.ProductDetailDtos;
 using ShopStar.Catalog.Dtos.ProductDtos;
 using ShopStar.Catalog.Dtos.ProductImageDtos;
@@ -20,6 +21,7 @@ namespace ShopStar.Catalog.Mapping
             CreateMap<Product, CreateProductDto>().ReverseMap();
             CreateMap<Product, UpdateProductDto>().ReverseMap();
             CreateMap<Product, GetByIdProductDto>().ReverseMap();
+            CreateMap<Product, ResultProductwithCategoryDto>().ReverseMap();
 
             CreateMap<ProductDetail, ResultProductDetailDto>().ReverseMap();
             CreateMap<ProductDetail, CreateProductDetailDto>().ReverseMap();
@@ -30,6 +32,11 @@ namespace ShopStar.Catalog.Mapping
             CreateMap<ProductImage, CreateProductImageDto>().ReverseMap();
             CreateMap<ProductImage, UpdateProductImageDto>().ReverseMap();
             CreateMap<ProductImage, GetByIdProductImageDto>().ReverseMap();
+
+            CreateMap<FeatureSlider, ResultFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, CreateFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, UpdateFeatureSliderDto>().ReverseMap();
+            CreateMap<FeatureSlider, GetByIdFeatureSliderDto>().ReverseMap();
         }
     }
 }
