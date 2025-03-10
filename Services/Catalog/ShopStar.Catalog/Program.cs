@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
 using ShopStar.Catalog.Services.CategoryServices;
+using ShopStar.Catalog.Services.FeatureDefaultServices;
 using ShopStar.Catalog.Services.FeatureSliderServices;
 using ShopStar.Catalog.Services.ProductDetailServices;
 using ShopStar.Catalog.Services.ProductImageServices;
@@ -25,6 +26,7 @@ builder.Services.AddScoped<IProductDetailService, ProductDetailService>();
 builder.Services.AddScoped<IProductImageService,ProductImageService>();
 builder.Services.AddScoped<IFeatureSliderService,FeatureSliderService>();
 builder.Services.AddScoped<ISpecialOfferService,SpecialOfferService>();
+builder.Services.AddScoped<IFeatureDefaultService,FeatureDefaultService>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

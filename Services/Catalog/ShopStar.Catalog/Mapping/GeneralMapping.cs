@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ShopStar.Catalog.Dtos.CategoryDtos;
+using ShopStar.Catalog.Dtos.FeatureDefaultDtos;
 using ShopStar.Catalog.Dtos.FeatureSliderDtos;
 using ShopStar.Catalog.Dtos.ProductDetailDtos;
 using ShopStar.Catalog.Dtos.ProductDtos;
@@ -43,6 +44,11 @@ namespace ShopStar.Catalog.Mapping
             CreateMap<SpecialOffer, CreateSpecialOfferDto>().ReverseMap();
             CreateMap<SpecialOffer, UpdateSpecialOfferDto>().ReverseMap();
             CreateMap<SpecialOffer, GetByIdSpecialOfferDto>().ReverseMap();
+
+            CreateMap<FeatureDefault,ResultFeatureDefaultDto>().ReverseMap();
+            CreateMap<FeatureDefault,CreateFeatureDefaultDto>().ReverseMap();
+            CreateMap<FeatureDefault,UpdateFeatureDefaultDto>().ReverseMap();
+            CreateMap<FeatureDefault,GetByIdFeatureDefaultDto>().ReverseMap();
         }
     }
 }
