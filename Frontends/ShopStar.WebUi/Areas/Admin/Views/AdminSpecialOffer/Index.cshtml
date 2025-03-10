@@ -1,8 +1,8 @@
-﻿@model List<ResultFeatureSliderDto>
+﻿@model List<ResultSpecialOfferDto>
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
-    int count = 0;
+    
 }
 
 <section class="content container-fluid">
@@ -14,8 +14,8 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
-                                <th>#</th>
                                 <th>Title</th>
+                                <th>SubTitle</th>
                                 <th>Delete</th>
                                 <th>Update</th>
                             </tr>
@@ -23,12 +23,11 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-                                count++;
                                 <tr>
-                                    <th scope="row">@count</th>
                                     <td>@item.Title</td>
-                                    <td><a href="/Admin/AdminFeatureSlider/DeleteFeatureSlider/@item.FeatureSliderId" class="btn btn-danger">Delete</a></td>
-                                    <td><a href="/Admin/AdminFeatureSlider/UpdateFeatureSlider/@item.FeatureSliderId" class="btn btn-success">Update</a></td>
+                                    <td>@item.SubTitle</td>
+                                    <td><a href="/Admin/AdminSpecialOffer/DeleteSpecialOffer/@item.SpecialOfferId" class="btn btn-danger">Delete</a></td>
+                                    <td><a href="/Admin/AdminSpecialOffer/UpdateSpecialOffer/@item.SpecialOfferId" class="btn btn-success">Update</a></td>
 
                                 </tr>
 
@@ -37,7 +36,7 @@
                         </tbody>
                     </table>
                     <br />
-                    <a href="/Admin/AdminFeatureSlider/CreateFeatureSlider/" class="btn btn-primary">New Slider</a>
+                    <a href="/Admin/AdminSpecialOffer/CreateSpecialOffer/" class="btn btn-primary">New Offer</a>
                 </div>
             </div>
         </div>

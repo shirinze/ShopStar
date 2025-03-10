@@ -74,6 +74,11 @@ namespace ShopStar.WebUi.Areas.Admin.Controllers
         [Route("UpdateFeatureSlider/{id}")]
         public async Task<IActionResult> UpdateFeatureSlider(string id)
         {
+
+            ViewBag.v1 = "Home";
+            ViewBag.v2 = "FeatureSlider";
+            ViewBag.v3 = "Update";
+            ViewBag.v0 = "featureslider ";
             var client= _httpClientFactory.CreateClient();
             var responseMessage = await client.GetAsync("https://localhost:7113/api/FeatureSliders/" + id);
             if (responseMessage.IsSuccessStatusCode)

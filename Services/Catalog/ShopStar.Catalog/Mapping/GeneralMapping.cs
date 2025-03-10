@@ -4,6 +4,7 @@ using ShopStar.Catalog.Dtos.FeatureSliderDtos;
 using ShopStar.Catalog.Dtos.ProductDetailDtos;
 using ShopStar.Catalog.Dtos.ProductDtos;
 using ShopStar.Catalog.Dtos.ProductImageDtos;
+using ShopStar.Catalog.Dtos.SpecialOfferDtos;
 using ShopStar.Catalog.Entities;
 
 namespace ShopStar.Catalog.Mapping
@@ -37,6 +38,11 @@ namespace ShopStar.Catalog.Mapping
             CreateMap<FeatureSlider, CreateFeatureSliderDto>().ReverseMap();
             CreateMap<FeatureSlider, UpdateFeatureSliderDto>().ReverseMap();
             CreateMap<FeatureSlider, GetByIdFeatureSliderDto>().ReverseMap();
+
+            CreateMap<SpecialOffer, ResultSpecialOfferDto>().ReverseMap();
+            CreateMap<SpecialOffer, CreateSpecialOfferDto>().ReverseMap();
+            CreateMap<SpecialOffer, UpdateSpecialOfferDto>().ReverseMap();
+            CreateMap<SpecialOffer, GetByIdSpecialOfferDto>().ReverseMap();
         }
     }
 }

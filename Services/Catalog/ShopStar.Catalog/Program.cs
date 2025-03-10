@@ -5,6 +5,7 @@ using ShopStar.Catalog.Services.FeatureSliderServices;
 using ShopStar.Catalog.Services.ProductDetailServices;
 using ShopStar.Catalog.Services.ProductImageServices;
 using ShopStar.Catalog.Services.ProductServices;
+using ShopStar.Catalog.Services.SpecialOfferServices;
 using ShopStar.Catalog.Settings;
 using System.Reflection;
 
@@ -23,6 +24,7 @@ builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductDetailService, ProductDetailService>();
 builder.Services.AddScoped<IProductImageService,ProductImageService>();
 builder.Services.AddScoped<IFeatureSliderService,FeatureSliderService>();
+builder.Services.AddScoped<ISpecialOfferService,SpecialOfferService>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
