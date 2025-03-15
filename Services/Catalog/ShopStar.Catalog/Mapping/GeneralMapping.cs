@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using ShopStar.Catalog.Dtos.BrandsDtos;
 using ShopStar.Catalog.Dtos.CategoryDtos;
 using ShopStar.Catalog.Dtos.FeatureDefaultDtos;
 using ShopStar.Catalog.Dtos.FeatureSliderDtos;
+using ShopStar.Catalog.Dtos.OfferDiscountDtos;
 using ShopStar.Catalog.Dtos.ProductDetailDtos;
 using ShopStar.Catalog.Dtos.ProductDtos;
 using ShopStar.Catalog.Dtos.ProductImageDtos;
@@ -49,6 +51,17 @@ namespace ShopStar.Catalog.Mapping
             CreateMap<FeatureDefault,CreateFeatureDefaultDto>().ReverseMap();
             CreateMap<FeatureDefault,UpdateFeatureDefaultDto>().ReverseMap();
             CreateMap<FeatureDefault,GetByIdFeatureDefaultDto>().ReverseMap();
+
+            CreateMap<OfferDiscount, ResultOfferDiscountDto>().ReverseMap();
+            CreateMap<OfferDiscount, CreateOfferDiscountDto>().ReverseMap();
+            CreateMap<OfferDiscount, UpdateOfferDiscountDto>().ReverseMap();
+            CreateMap<OfferDiscount, GetByIdOfferDiscountDto>().ReverseMap();
+
+            CreateMap<Brand, ResultBrandDto>().ReverseMap();
+            CreateMap<Brand, CreateBrandDto>().ReverseMap();
+            CreateMap<Brand, UpdateBrandDto>().ReverseMap();
+            CreateMap<Brand, GetByIdBrandDto>().ReverseMap();
         }
+
     }
 }

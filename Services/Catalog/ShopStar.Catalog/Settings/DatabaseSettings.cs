@@ -11,5 +11,8 @@
         public string FeatureSliderCollectionName { get ; set ; }
         public string SpecialOfferCollectionName { get ; set ; }
         public string FeatureDefaultCollectionName { get ; set ; }
+        public string OfferDiscountCollectionName { get; set; }
+        public string BrandCollectionName { get; set; }
+
     }
 }
