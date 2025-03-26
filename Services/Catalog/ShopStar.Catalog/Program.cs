@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Options;
+using ShopStar.Catalog.Services.AboutServices;
 using ShopStar.Catalog.Services.BrandServices;
 using ShopStar.Catalog.Services.CategoryServices;
 using ShopStar.Catalog.Services.FeatureDefaultServices;
@@ -31,6 +32,7 @@ builder.Services.AddScoped<ISpecialOfferService,SpecialOfferService>();
 builder.Services.AddScoped<IFeatureDefaultService,FeatureDefaultService>();
 builder.Services.AddScoped<IOfferDiscountService,OfferDiscountService>();
 builder.Services.AddScoped<IBrandService,BrandService>();
+builder.Services.AddScoped<IAboutService,AboutService>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

@@ -13,6 +13,8 @@
         public string FeatureDefaultCollectionName { get ; set ; }
         public string OfferDiscountCollectionName { get; set; }
         public string BrandCollectionName { get; set; }
+        public string AboutCollectionName { get; set; }
+
 
     }
 }
