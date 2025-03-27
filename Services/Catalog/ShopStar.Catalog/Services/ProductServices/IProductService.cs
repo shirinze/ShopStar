@@ -10,5 +10,6 @@ namespace ShopStar.Catalog.Services.ProductServices
         Task DeleteProductAsync(string id);
         Task<GetByIdProductDto> GetByIdProductAsync(string id);
         Task<List<ResultProductwithCategoryDto>> GetProductWithCategoryAsync();
+        Task<List<ResultProductwithCategoryDto>> GetProductWithCategoryByCategoryIdAsync(string CategoryId);
     }
 }

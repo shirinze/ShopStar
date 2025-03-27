@@ -55,5 +55,11 @@ namespace ShopStar.Catalog.Controllers
             var values=await _productService.GetProductWithCategoryAsync();
             return Ok(values);
         }
+        [HttpGet("ProductWithCategoryByCategoryId")]
+        public async Task<IActionResult> ProductWithCategoryByCategoryId(string CategoryId)
+        {
+            var value = await _productService.GetProductWithCategoryByCategoryIdAsync(CategoryId);
+            return Ok(value);
+        }
     }
 }
