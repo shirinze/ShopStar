@@ -4,8 +4,9 @@ namespace ShopStar.WebUi.Controllers
 {
     public class ProductDetailController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string id)
         {
+            ViewBag.x = id;
             return View();
         }
     }
