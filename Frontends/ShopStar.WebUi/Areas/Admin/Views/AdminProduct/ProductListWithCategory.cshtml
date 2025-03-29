@@ -20,6 +20,7 @@
                                 <th>Category Name</th>
                                 <th>Delete</th>
                                 <th>Update</th>
+                                <th>Product Images</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -33,6 +34,7 @@
                                     <td>@item.Category.CategoryName</td>
                                     <td><a href="/Admin/AdminProduct/DeleteProduct/@item.ProductID" class="btn btn-danger">Delete</a></td>
                                     <td><a href="/Admin/AdminProduct/UpdateProduct/@item.ProductID" class="btn btn-success">Update</a></td>
+                                    <td><a href="/Admin/AdminProductImage/ProductImageDetail/@item.ProductID" class="btn btn-warning">Product Images</a></td>
 
                                 </tr>
 

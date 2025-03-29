@@ -1,4 +1,10 @@
-﻿namespace ShopStar.Catalog.Dtos.ProductImageDtos
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ShopStar.DtosLayer.Dtos.CatalogDtos.ProductImageDtos
 {
     public class GetByIdProductImageDto
     {

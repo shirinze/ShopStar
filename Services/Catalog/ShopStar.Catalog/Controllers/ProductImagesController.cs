@@ -46,5 +46,11 @@ namespace ShopStar.Catalog.Controllers
             await _productImageService.UpdateProductImageAsync(updateProductImagedto);
             return Ok("Update Success");
         }
+        [HttpGet("GetByProductIdProductImage")]
+        public async Task<IActionResult> GetByProductIdProductImage(string id)
+        {
+            var value = await _productImageService.GetByProductIdProductImageAsync(id);
+            return Ok(value);
+        }
     }
 }
