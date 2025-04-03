@@ -32,11 +32,13 @@ namespace ShopStar.Catalog.Mapping
             CreateMap<ProductDetail, CreateProductDetailDto>().ReverseMap();
             CreateMap<ProductDetail, UpdateProductDetailDto>().ReverseMap();
             CreateMap<ProductDetail, GetByIdProductDetailDto>().ReverseMap();
+            CreateMap<ProductDetail, GetByProductIdProductDetailDto>().ReverseMap();
 
             CreateMap<ProductImage, ResultProductImageDto>().ReverseMap();
             CreateMap<ProductImage, CreateProductImageDto>().ReverseMap();
             CreateMap<ProductImage, UpdateProductImageDto>().ReverseMap();
             CreateMap<ProductImage, GetByIdProductImageDto>().ReverseMap();
+            CreateMap<ProductImage, GetByProductIdByProductImageDto>().ReverseMap();
            
 
             CreateMap<FeatureSlider, ResultFeatureSliderDto>().ReverseMap();

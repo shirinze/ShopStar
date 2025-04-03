@@ -42,6 +42,12 @@ namespace ShopStar.Catalog.Services.ProductDetailServices
             return _mapper.Map<GetByIdProductDetailDto>(value);
         }
 
+        public async Task<GetByProductIdProductDetailDto> GetByProductIdProductDetailAsync(string id)
+        {
+            var value = await _productdetailCollection.Find(x => x.ProductId == id).FirstOrDefaultAsync();
+            return _mapper.Map<GetByProductIdProductDetailDto>(value);
+        }
+
         public async Task UpdateProductDetailAsync(UpdateProductDetailDto updateProductDetailDto)
         {
             var value = _mapper.Map<ProductDetail>(updateProductDetailDto);

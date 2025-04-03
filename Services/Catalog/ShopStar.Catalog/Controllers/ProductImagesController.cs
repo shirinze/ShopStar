@@ -49,7 +49,7 @@ namespace ShopStar.Catalog.Controllers
         [HttpGet("GetByProductIdProductImage")]
         public async Task<IActionResult> GetByProductIdProductImage(string id)
         {
-            var value = await _productImageService.GetByProductIdProductImageAsync(id);
+            var value = await _productImageService.GetByProductIdByProductImageAsync(id);
             return Ok(value);
         }
     }

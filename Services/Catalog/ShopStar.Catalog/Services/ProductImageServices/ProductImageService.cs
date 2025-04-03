@@ -42,10 +42,10 @@ namespace ShopStar.Catalog.Services.ProductImageServices
             return _mapper.Map<GetByIdProductImageDto>(value);
         }
 
-        public async Task<GetByIdProductImageDto> GetByProductIdProductImageAsync(string id)
+        public async Task<GetByProductIdByProductImageDto> GetByProductIdByProductImageAsync(string id)
         {
-            var values = await _productImageCollection.Find(x => x.ProductID == id).FirstOrDefaultAsync();
-            return _mapper.Map<GetByIdProductImageDto>(values);
+            var value=await _productImageCollection.Find(x=>x.ProductID==id).FirstOrDefaultAsync();
+            return _mapper.Map<GetByProductIdByProductImageDto>(value);
         }
 
         public async Task UpdateProductImageAsync(UpdateProductImageDto updateProductImageDto)
