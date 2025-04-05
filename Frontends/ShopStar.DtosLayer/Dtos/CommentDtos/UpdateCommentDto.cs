@@ -1,6 +1,12 @@
-﻿namespace ShopStar.Comment.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ShopStar.DtosLayer.Dtos.CommentDtos
 {
-    public class UserComment
+    public class UpdateCommentDto
     {
         public int UserCommentId { get; set; }
         public string NameSureName { get; set; }
