@@ -2,6 +2,7 @@
 using ShopStar.Catalog.Dtos.AboutDtos;
 using ShopStar.Catalog.Dtos.BrandsDtos;
 using ShopStar.Catalog.Dtos.CategoryDtos;
+using ShopStar.Catalog.Dtos.ContactDtos;
 using ShopStar.Catalog.Dtos.FeatureDefaultDtos;
 using ShopStar.Catalog.Dtos.FeatureSliderDtos;
 using ShopStar.Catalog.Dtos.OfferDiscountDtos;
@@ -70,6 +71,11 @@ namespace ShopStar.Catalog.Mapping
             CreateMap<About, CreateAboutDto>().ReverseMap();
             CreateMap<About, UpdateAboutDto>().ReverseMap();
             CreateMap<About, GetByIdAboutDto>().ReverseMap();
+
+            CreateMap<Contact, ResultContactDto>().ReverseMap();
+            CreateMap<Contact, CreateContactDto>().ReverseMap();
+            CreateMap<Contact, UpdateContactDto>().ReverseMap();
+            CreateMap<Contact, GetByIdContactDto>().ReverseMap();
 
         }
 

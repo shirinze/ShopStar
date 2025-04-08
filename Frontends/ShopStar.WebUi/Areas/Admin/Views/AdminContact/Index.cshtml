@@ -1,0 +1,49 @@
+﻿@model List<ResultContactDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<section class="content container-fluid">
+    <div class="row">
+
+        <div class="col-md-12">
+            <div class="chart-box">
+                <div class="bs-example" data-example-id="bordered-table">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Subject</th>
+                                <th>Message</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                count++;
+                                <tr>
+                                    <td>@count</td>
+                                    <td>@item.NameSurename</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Subject</td>
+                                    <td>@item.Message</td>
+                                    <td>@item.SendDate</td>
+
+                                </tr>
+
+                            }
+
+                        </tbody>
+                    </table>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

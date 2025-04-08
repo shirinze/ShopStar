@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ShopStar.DtosLayer.Dtos.CatalogDtos.AboutDtos;
+using ShopStar.DtosLayer.Dtos.CatalogDtos.ContactDtos;
 using System.Text;
 
 namespace ShopStar.WebUi.Areas.Admin.Controllers
@@ -49,6 +50,7 @@ namespace ShopStar.WebUi.Areas.Admin.Controllers
         [Route("CreateAbout")]
         public async Task<IActionResult> CreateAbout(CreateAboutDto createAboutDto)
         {
+            
             var client=_httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createAboutDto);
             StringContent stringcontent = new StringContent(jsonData,Encoding.UTF8,"application/json");

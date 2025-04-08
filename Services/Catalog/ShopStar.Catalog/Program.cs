@@ -3,6 +3,7 @@ using Microsoft.Extensions.Options;
 using ShopStar.Catalog.Services.AboutServices;
 using ShopStar.Catalog.Services.BrandServices;
 using ShopStar.Catalog.Services.CategoryServices;
+using ShopStar.Catalog.Services.ContactServices;
 using ShopStar.Catalog.Services.FeatureDefaultServices;
 using ShopStar.Catalog.Services.FeatureSliderServices;
 using ShopStar.Catalog.Services.OfferDiscountServices;
@@ -33,6 +34,7 @@ builder.Services.AddScoped<IFeatureDefaultService,FeatureDefaultService>();
 builder.Services.AddScoped<IOfferDiscountService,OfferDiscountService>();
 builder.Services.AddScoped<IBrandService,BrandService>();
 builder.Services.AddScoped<IAboutService,AboutService>();
+builder.Services.AddScoped<IContactService,ContactService>();
 
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
