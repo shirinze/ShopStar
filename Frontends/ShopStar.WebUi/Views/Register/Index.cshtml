@@ -1,0 +1,75 @@
+﻿@model CreateRegisterDto
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ShopStar Register</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/registerform/css/register.css">
+</head>
+<body>
+    <div class="form_wrapper">
+        <div class="form_container">
+            <div class="title_container">
+                <h2>welcome to ShopStar</h2>
+            </div>
+            <div class="row clearfix">
+                <div class="">
+                    <form method="post">
+                        <div class="input_field">
+                            <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
+                            <input type="email" asp-for="Email" placeholder="Email" required />
+                        </div>
+                        <div class="input_field">
+                            <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                            <input type="password" asp-for="Password" placeholder="Password" required />
+                        </div>
+                        <div class="input_field">
+                            <span><i aria-hidden="true" class="fa fa-lock"></i></span>
+                            <input type="password" asp-for="ConfirmPassword" placeholder="Re-type Password" required />
+                        </div>
+                        <div class="input_field">
+                            <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                            <input type="text" placeholder="User Name" required />
+                        </div>
+                        <div class="row clearfix">
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" asp-for="Name" placeholder="First Name" />
+                                </div>
+                            </div>
+                            <div class="col_half">
+                                <div class="input_field">
+                                    <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                                    <input type="text" asp-for="Surename" placeholder="Last Name" required />
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="input_field checkbox_option">
+                            <input type="checkbox" id="cb1">
+                            <label for="cb1">I agree with terms and conditions</label>
+                        </div>
+                        <div class="input_field checkbox_option">
+                            <input type="checkbox" id="cb2">
+                            <label for="cb2">I want to receive the newsletter</label>
+                        </div>
+                        <input class="button" type="submit" value="Register" />
+                        <br />
+                        <br />
+                        <div class="text">
+                            <h6>Already have an account? <a href="/Login/Index/">LogIn now</a></h6>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
