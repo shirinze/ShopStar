@@ -6,6 +6,8 @@ namespace ShopStar.WebUi.Controllers
     {
         public IActionResult Index()
         {
+            var user = User.Claims;
+            int x;
             return View();
         }
     }
