@@ -16,7 +16,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddCo
 });
 
 builder.Services.AddHttpContextAccessor();
-
 builder.Services.AddScoped<ILoginService, LoginService>();
 
 builder.Services.AddHttpClient();

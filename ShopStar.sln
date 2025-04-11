@@ -38,6 +38,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requirement", "Requirement"
 		IdentityServerErrorVersionSolution.txt = IdentityServerErrorVersionSolution.txt
 		PortainerCmd.txt = PortainerCmd.txt
 		PortNumber.txt = PortNumber.txt
+		User.txt = User.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{C736F7AB-30BE-4F2C-940E-084F6F89A6C8}"

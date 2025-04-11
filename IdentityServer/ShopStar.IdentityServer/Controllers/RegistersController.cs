@@ -26,7 +26,7 @@ namespace ShopStar.IdentityServer.Controllers
         {
             var values = new ApplicationUser 
             { 
-                UserName = userRegisterDto.UserName,
+                UserName = userRegisterDto.Username,
                 Email = userRegisterDto.Email,
                 Name=userRegisterDto.Name,
                 Surename=userRegisterDto.Surename,
