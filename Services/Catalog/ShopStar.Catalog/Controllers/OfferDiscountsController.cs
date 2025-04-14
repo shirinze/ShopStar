@@ -7,9 +7,9 @@ using ShopStar.Catalog.Services.OfferDiscountServices;
 
 namespace ShopStar.Catalog.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
-    [AllowAnonymous]
     public class OfferDiscountsController : ControllerBase
     {
         private readonly IOfferDiscountService _offerDiscountService;

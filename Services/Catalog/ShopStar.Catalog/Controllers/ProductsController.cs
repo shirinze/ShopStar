@@ -7,7 +7,7 @@ using ShopStar.Catalog.Services.ProductServices;
 
 namespace ShopStar.Catalog.Controllers
 {
-    [AllowAnonymous]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase

@@ -6,7 +6,7 @@ using ShopStar.Catalog.Services.AboutServices;
 
 namespace ShopStar.Catalog.Controllers
 {
-    [AllowAnonymous]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AboutsController : ControllerBase

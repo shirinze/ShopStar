@@ -45,7 +45,7 @@ namespace ShopStar.IdentityServer
                 ClientName="Shop Star Visitor User",
                 AllowedGrantTypes=GrantTypes.ClientCredentials,
                 ClientSecrets={new Secret ("shopstarsecret".Sha256()) },
-                AllowedScopes={ "DiscountFullPermission" }
+                AllowedScopes={ "DiscountFullPermission", "CatalogReadPermission", "CatalogFullPermission" }
 
             },
 
@@ -56,7 +56,7 @@ namespace ShopStar.IdentityServer
                 ClientName="Shop Star Manager User",
                 AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                 ClientSecrets={new Secret("shopstarsecret".Sha256())},
-                AllowedScopes={ "CatalogReadPermission", "CatalogFullPermission" }
+                AllowedScopes={ "CatalogReadPermission", "CatalogFullPermission", "BasketFullPermission" }
             },
 
             //admin

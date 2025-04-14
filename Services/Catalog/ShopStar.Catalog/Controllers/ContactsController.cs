@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace ShopStar.Catalog.Controllers
 {
-    [AllowAnonymous]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ContactsController : ControllerBase

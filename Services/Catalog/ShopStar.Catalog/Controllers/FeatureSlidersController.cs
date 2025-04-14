@@ -8,7 +8,7 @@ using ShopStar.Catalog.Services.FeatureSliderServices;
 
 namespace ShopStar.Catalog.Controllers
 {
-    [AllowAnonymous]
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class FeatureSlidersController : ControllerBase

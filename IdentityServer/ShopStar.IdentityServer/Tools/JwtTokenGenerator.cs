@@ -15,7 +15,7 @@ namespace ShopStar.IdentityServer.Tools
             if(!string.IsNullOrWhiteSpace(model.Role))
                 claims.Add(new Claim(ClaimTypes.Role,model.Role));
 
-            claims.Add(new Claim(ClaimTypes.NameIdentifier, model.Id));
+            claims.Add(new Claim(ClaimTypes.NameIdentifier, model.Id.ToString()));
             if (!string.IsNullOrWhiteSpace(model.Username))
                 claims.Add(new Claim("Username", model.Username));
 
